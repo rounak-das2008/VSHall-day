@@ -8,6 +8,13 @@ import img229 from "../public/new/image229.gif"
 import img220 from "../public/new/image220.gif"
 import img208 from "../public/new/image208.gif"
 import img242 from "../public/new/image242.gif"
+import id1 from "../public/new/gate.jpeg"
+import id2 from "../public/new/hallboard.jpeg"
+import id3 from "../public/new/mess_entry.jpeg"
+import id4 from "../public/new/handwash.jpeg"
+import id5 from "../public/new/mess_exit.jpeg"
+import id6 from "../public/new/stairs.jpeg"
+import id7 from "../public/new/toilet.jpg"
 
 
 
@@ -82,11 +89,70 @@ export const NavigationCard: React.FC<Props> = ({
     >
       <div className="relative rounded-xl overflow-hidden shadow-2xl bg-black/30 backdrop-blur-sm">
         <div className="relative h-[400px] w-full">
-          <img 
-            src={card.id == 8 ? roomNumber==="225" ? img225 : roomNumber==="238" ? img238 : roomNumber==="229" ? img229 : roomNumber==="220" ? img220 : roomNumber==="208" ? img208 : roomNumber==="242" ? img242 : "" : card.image} 
+          {
+            card.id===1 &&
+            <img 
+            src={id1}
             alt={card.title}
             className="absolute inset-0 w-full h-full object-cover"
           />
+          }
+          {
+            card.id===2 &&
+            <img 
+            src={id2}
+            alt={card.title}
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          }
+          {
+            card.id===3 &&
+            <img 
+            src={id3}
+            alt={card.title}
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          }
+          {
+            card.id===4 &&
+            <img 
+            src={id4}
+            alt={card.title}
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          }
+          {
+            card.id===5 &&
+            <img 
+            src={id5}
+            alt={card.title}
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          }
+          {
+            card.id===6 &&
+            <img 
+            src={id6}
+            alt={card.title}
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          }
+          {
+            card.id===7 &&
+            <img 
+            src={id7}
+            alt={card.title}
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          }
+          {
+            card.id===8 &&
+            <img 
+            src={roomNumber==="225" ? img225 : roomNumber==="238" ? img238 : roomNumber==="229" ? img229 : roomNumber==="220" ? img220 : roomNumber==="208" ? img208 : roomNumber==="242" ? img242 : ""} 
+            alt={card.title}
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          }
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
           
           {/* Navigation buttons at the center */}
