@@ -19,7 +19,7 @@ export const navigationCards: LocationCard[] = [
     id: 3,
     title: "VS Mess",
     description: "Excuse us for the food 😔",
-    image: "src/public/new/mess_entry.jpeg",
+    image: "../public/new/mess_entry.jpeg",
     direction: "Take your left and move ahead"
   },
   {
